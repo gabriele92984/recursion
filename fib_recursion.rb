@@ -1,12 +1,12 @@
 # Fibonacci sequence using iteration
 def fibs(num)
-  fib_sequence = [0, 1] 
+  fib_sequence = [0, 1]
 
   (2..num).each do |i|
-    fib_sequence << fib_sequence[i - 1] + fib_sequence[i - 2]
+    fib_sequence << (fib_sequence[i - 1] + fib_sequence[i - 2])
   end
 
-  fib_sequence[0..num - 1] 
+  fib_sequence[0..num - 1]
 end
 
 # Example usage
@@ -18,7 +18,7 @@ def fibs_rec(n)
   return [0, 1] if n == 2
 
   prev_fibs = fibs_rec(n - 1)
-  prev_fibs << prev_fibs[-1] + prev_fibs[-2]
+  prev_fibs << (prev_fibs[-1] + prev_fibs[-2])
 end
 
 # Example usage
