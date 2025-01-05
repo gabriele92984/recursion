@@ -22,5 +22,5 @@ def fibs_rec(n)
 end
 
 # Example usage
-puts 'This was printed recursively'
+puts "\nThis was printed recursively"
 p fibs_rec(8) # Output: [0, 1, 1, 2, 3, 5, 8, 13]
